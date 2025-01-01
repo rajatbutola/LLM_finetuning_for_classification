@@ -38,3 +38,36 @@ cd bert-glue-mrpc
 Copy code
 python fine_tune_bert_mrpc.py
 ```
+## Output
+The code will display the training progress using a progress bar and output the evaluation results, including the accuracy and F1-score on the validation set.
+
+## File Structure
+- fine_tune_bert_mrpc.py: Main script for fine-tuning and evaluation.
+
+## Evaluation Metrics
+The model is evaluated using the GLUE MRPC-specific metrics:
+
+- Accuracy
+- F1-score
+
+## Example Dataset  
+
+The MRPC dataset consists of sentence pairs labeled as **paraphrase** or **not paraphrase**:  
+
+| Sentence 1            | Sentence 2             | Label            |  
+|------------------------|------------------------|------------------|  
+| "The sky is blue."     | "The sky appears blue." | 1 (Paraphrase)   |  
+| "The car is red."      | "The book is open."     | 0 (Not Paraphrase) |  
+
+
+
+
+## Model and Training Details
+- Pretrained Model: bert-base-uncased
+- Optimizer: AdamW (learning rate: 3e-5)
+- Scheduler: Linear schedule with warmup
+- Batch Size: 8
+- Epochs: 3
+## Results
+Final evaluation metrics will be printed after training. You can expect a high F1-score on the MRPC dataset.
+
