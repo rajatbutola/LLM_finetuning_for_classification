@@ -24,3 +24,17 @@ Install the dependencies with:
 ```bash
 pip install torch transformers datasets tqdm evaluate
 ```
+## How to Use  
+
+### Clone the Repository  
+```bash
+git clone https://github.com/yourusername/bert-glue-mrpc.git
+cd bert-glue-mrpc
+```
+## Run the Code
+### Execute the script to fine-tune the model:
+
+```bash
+Copy code
+python fine_tune_bert_mrpc.py
+```
