@@ -1,16 +1,16 @@
 # LLM_finetuning_for_classification
-Fine-tuning a BERT model for sentence-pair classification on the GLUE MRPC dataset using Hugging Face Transformers.
-# Fine-Tuning BERT on the GLUE MRPC Dataset  
+Fine-tuning a BERT model for sentence-pair classification dataset using Hugging Face Transformers.
+# Fine-Tuning BERT  
 
-This repository demonstrates how to fine-tune a **BERT model** for sentence-pair classification using the **Hugging Face Transformers library**. The example focuses on the **Microsoft Research Paraphrase Corpus (MRPC)** dataset from the **GLUE benchmark**, which evaluates if two sentences are semantically equivalent.  
+This repository demonstrates how to fine-tune a **BERT model** for sentence-pair classification using the **Hugging Face Transformers library**. The example focuses on the dataset, which evaluates if two sentences are semantically equivalent.  
 
 ## Features  
-- Load and preprocess the MRPC dataset using the `datasets` library.  
+- Load and preprocess the dataset using the `datasets` library.  
 - Tokenize input data with `AutoTokenizer`.  
 - Fine-tune a pretrained **BERT model** (`bert-base-uncased`) with a classification head for binary classification.  
 - Use `DataCollatorWithPadding` for efficient batching and dynamic padding.  
 - Implement a training loop with **PyTorch** and a learning rate scheduler.  
-- Evaluate the fine-tuned model using GLUE's MRPC evaluation metrics.  
+- Evaluate the fine-tuned model using evaluation metrics.  
 
 ## Requirements  
 - Python 3.8+  
@@ -28,8 +28,7 @@ pip install torch transformers datasets tqdm evaluate
 
 ### Clone the Repository  
 ```bash
-git clone https://github.com/yourusername/bert-glue-mrpc.git
-cd bert-glue-mrpc
+git clone https://github.com/rajatbutola/LLM_finetuning_for_classification.git
 ```
 ## Run the Code
 ### Execute the script to fine-tune the model:
@@ -45,14 +44,14 @@ The code will display the training progress using a progress bar and output the 
 - fine_tune_bert_mrpc.py: Main script for fine-tuning and evaluation.
 
 ## Evaluation Metrics
-The model is evaluated using the GLUE MRPC-specific metrics:
+The model is evaluated using the specific metrics:
 
 - Accuracy
 - F1-score
 
 ## Example Dataset  
 
-The MRPC dataset consists of sentence pairs labeled as **paraphrase** or **not paraphrase**:  
+The dataset consists of sentence pairs labeled as **paraphrase** or **not paraphrase**:  
 
 | Sentence 1            | Sentence 2             | Label            |  
 |------------------------|------------------------|------------------|  
@@ -69,5 +68,5 @@ The MRPC dataset consists of sentence pairs labeled as **paraphrase** or **not p
 - Batch Size: 8
 - Epochs: 3
 ## Results
-Final evaluation metrics will be printed after training. You can expect a high F1-score on the MRPC dataset.
+Final evaluation metrics will be printed after training. You can expect a high F1-score on the dataset.
 
