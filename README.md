@@ -40,8 +40,6 @@ python LLM_trainning.py
 ## Output
 The code will display the training progress using a progress bar and output the evaluation results, including the accuracy and F1-score on the validation set.
 
-## File Structure
-- fine_tune_bert_mrpc.py: Main script for fine-tuning and evaluation.
 
 ## Evaluation Metrics
 The model is evaluated using the specific metrics:
