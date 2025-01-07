@@ -35,7 +35,7 @@ git clone https://github.com/rajatbutola/LLM_finetuning_for_classification.git
 
 ```bash
 Copy code
-python fine_tune_bert_mrpc.py
+python LLM_trainning.py
 ```
 ## Output
 The code will display the training progress using a progress bar and output the evaluation results, including the accuracy and F1-score on the validation set.
